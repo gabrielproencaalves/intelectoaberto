@@ -21,7 +21,7 @@ if [ ! -z "$1"  ] && [ -e "$1" ]; then
   # Substitua os estilos padrão do groff pelos
   # utilizados nos artigos da FSF.
   sed -i '10,15d' "$FILE.html"
-  sed -i '10i<link rel="stylesheet" type="text/css" href="layout.min.css" media="screen" />' "$FILE.html"
+  sed -i '10i<link rel="stylesheet" type="text/css" href="styles/layout.min.css" media="screen" />' "$FILE.html"
 else
   # Se algo der errado, ensine o usuário.
   printf "USAGE: makeart \`file'\n"
