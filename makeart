@@ -1,0 +1,28 @@
+#!/bin/sh
+
+# Remove quebras de linha desnecessárias.
+alias trfmt='sed "/^$/d"'
+
+# Caso o arquivo, se informado, exista...
+if [ ! -z "$1"  ] && [ -e "$1" ]; then
+
+  # Armazene em `file' o nome do arquivo
+  # sem a extensão (para evitar acidentes).
+  FILE=`echo "$1" | sed "s/.tr//"`
+
+  # Gere a página html a partir do documento troff.
+  trfmt "$FILE.tr" | groff -ms -Thtml -k > "$FILE.html"
+
+  # Substitua as definições obsoletas do groff
+  # por outras melhores.
+  sed -i '8d' "$FILE.html"
+  sed -i '8i<meta http-equiv="Content-Type" content="text/html; charset=utf-8">' "$FILE.html"
+
+  # Substitua os estilos padrão do groff pelos
+  # utilizados nos artigos da FSF.
+  sed -i '10,15d' "$FILE.html"
+  sed -i '10i<link rel="stylesheet" type="text/css" href="styles/layout.min.css" media="screen" />' "$FILE.html"
+else
+  # Se algo der errado, ensine o usuário.
+  printf "USAGE: makeart \`file'\n"
+fi
