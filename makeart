@@ -22,6 +22,10 @@ if [ ! -z "$1"  ] && [ -e "$1" ]; then
   # utilizados nos artigos da FSF.
   sed -i '10,15d' "$FILE.html"
   sed -i '10i<link rel="stylesheet" type="text/css" href="styles/layout.min.css" media="screen" />' "$FILE.html"
+
+  # Adicione a viewport para compatibilidade
+  # com qualquer tela.
+  sed -i '10i<meta name="viewport" content="width=device-width, initial-scale=1" />' "$FILE.html"
 else
   # Se algo der errado, ensine o usuário.
   printf "USAGE: makeart \`file'\n"
