@@ -1,0 +1,53 @@
+/* Corpo inicial do HTML */
+body {
+  background-color: #090909;
+}
+
+/* Área onde o texto principal é inserido */
+main {
+  background-color: #323232;
+  width: 60%;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 0.25em auto 0.25em auto;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 550;
+  color: white;
+  padding: 1em;
+}
+
+/* Cabeçalho da página, geralmente único */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: 24px;
+}
+
+hr {
+  background-color: #090909;
+}
+
+a {
+  color: lightblue;
+}
+
+main p {
+  text-indent: 2em;
+}
+
+footer {
+  background-color: #323232;
+  width: 60%;
+  min-width: 300px;
+  max-width: 700px;
+  margin: 0.25em auto 0.25em auto;
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
