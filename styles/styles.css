@@ -10,7 +10,7 @@ body {
 header, main, footer {
   background-color: #323232;
   width: 60%;
-  min-width: 300px;
+  min-width: 270px;
   max-width: 700px;
   margin: 0.25em auto 0.25em auto;
   font-family: sans-serif;
