@@ -30,13 +30,13 @@ footer {
 
 /* Cabeçalho da página, geralmente único */
 main h1 {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   margin-bottom: 1em;
 }
 
 main h2, h3, h4, h5, h6 {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 main p {
