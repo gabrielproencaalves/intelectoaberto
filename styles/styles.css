@@ -44,9 +44,9 @@ main p {
 }
 
 a {
-  color: lightblue;
+  color: rgb(0, 128, 255);
 }
 
 a:visited {
-  color: #c700ff12;
+  color: rgb(200, 128, 255);
 }
