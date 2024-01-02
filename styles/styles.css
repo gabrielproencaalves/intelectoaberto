@@ -22,8 +22,7 @@ header, main, footer {
 
 
 footer {
-  font-size: initial;
-  padding: 20px;
+  font-size: 12px;
   font-family: sans-serif;
   text-align: center;
 }
