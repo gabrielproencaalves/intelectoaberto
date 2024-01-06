@@ -39,6 +39,10 @@ main h2, h3, h4, h5, h6 {
   font-size: 20px;
 }
 
+main hr {
+  color: white;
+}
+
 main p {
   text-indent: 2em;
 }
@@ -49,4 +53,23 @@ a {
 
 a:visited {
   color: rgb(200, 128, 255);
+}
+
+a.menu-button {
+  display: block;
+  margin: 20px auto;
+  border-color: white;  
+  border: solid 2px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.menu-button:hover {
+  color: rgb(48, 48, 48);
+  background-color: white;
+}
+
+a.menu-button:visited {
+  color: white;
 }
