@@ -58,6 +58,7 @@ a:visited {
 a.menu-button {
   display: block;
   margin: 20px auto;
+  max-width: 300px;
   border-color: white;  
   border: solid 2px;
   color: white;
