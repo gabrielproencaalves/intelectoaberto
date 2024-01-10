@@ -95,3 +95,24 @@ table {
   border-collapse: collapse;
   text-align: center;
 }
+
+th,
+td {
+  padding: 1em;
+  border: solid 1px;
+}
+
+th.start,
+td.start {
+  border-left: none;
+}
+
+th.end,
+td.end {
+  border-right: none;
+}
+
+th.bottom,
+td.bottom {
+  border-bottom: none;
+}
