@@ -7,7 +7,9 @@ body {
 }
 
 /* Área onde o texto principal é inserido */
-header, main, footer {
+header,
+main,
+footer {
   background-color: rgb(48, 48, 48);
   width: 60%;
   min-width: 270px;
@@ -20,6 +22,10 @@ header, main, footer {
   hyphens: auto;
 }
 
+.header-menu {
+  display: flex;
+  align-items: center;
+}
 
 footer {
   font-size: 12px;
@@ -41,6 +47,7 @@ main h2, h3, h4, h5, h6 {
 
 main hr {
   color: white;
+  margin: 0;
 }
 
 main p {
@@ -55,22 +62,36 @@ a:visited {
   color: rgb(200, 128, 255);
 }
 
-a.menu-button {
-  display: block;
-  margin: 20px auto;
-  max-width: 300px;
+a.menu-header-button, a.menu-button {
+  display: inline-block;
+  width: 50%;
   border-color: white;  
-  border: solid 2px;
+  border: solid 1px;
   color: white;
   text-align: center;
   text-decoration: none;
+  padding: 0.25em;
 }
 
-a.menu-button:hover {
+a.menu-button {
+  width: auto;
+}
+
+a.menu-header-button:visited,
+a.menu-button:visited {
+  color: white;
+}
+
+a.menu-header-button:hover,
+a.menu-header-button:active,
+a.menu-button:hover,
+a.menu-button:active {
   color: rgb(48, 48, 48);
   background-color: white;
 }
 
-a.menu-button:visited {
-  color: white;
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
 }
