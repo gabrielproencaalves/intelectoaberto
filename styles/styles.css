@@ -90,6 +90,12 @@ a.menu-button:active {
   background-color: white;
 }
 
+.last-modified-at {
+  color: rgb(151, 151, 151);
+  font-style: italic;
+  text-align: end;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
